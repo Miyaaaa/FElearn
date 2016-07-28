@@ -75,25 +75,24 @@
             <p class="div4_hr"></p>
             <p class="div4_p2">每个城市有不同的活动信息，请自助查询您所需要了解的城市</p>
         </div>
-        <!--<aiv class="div4_sub2">-->
-            <!---->
-        <!--</aiv>-->
         <form id="div4_form">
             <select id="country" name="country">
                 <option value="" selected>国家</option>
                 <option value="China">China</option>
                 <option value="UK">The UK</option>
             </select>
-            <select id="province" name="province">
-                <option value="" selected>省份</option>
-                <option value="北京市">北京市</option>
-                <option value="四川省">四川省</option>
-                <option value="天津市">天津市</option>
-                <option value="河北省">河北省</option>
-                <option value="陕西省">陕西省</option>
-                <option value="内蒙古自治区">内蒙古自治区</option>
-                <option value="辽宁省">辽宁省</option>
+            <select id="province" name="province" onclick="selclick('province')">
+                <option value="" checked>省份</option>
             </select>
+            <ul id="for_province" class="hide">
+                <li value="北京市">北京市</li>
+                <li value="四川省">四川省</li>
+                <li value="天津市">天津市</li>
+                <li value="河北省">河北省</li>
+                <li value="陕西省">陕西省</li>
+                <li value="内蒙古自治区">内蒙古自治区</li>
+                <li value="辽宁省">辽宁省</li>
+            </ul>
             <select id="city" name="city">
                 <option value="" selected>城市</option>
             </select>
@@ -134,6 +133,12 @@
     </div>
     <div class="main_div6">
         <img src="./img/div6_pic1.png" alt="img">
+        <div class="div6_sub2">
+            <p class="line1">新世界</p>
+            <p class="line2">TIME</p>
+            <p class="line3">@新世界-北京</p>
+            <p class="line3">2016.04.01</p>
+        </div>
         <div class="div6_sub1">
             <p class="title">新世界/<span>01</span></p>
             <p class="content">新世界是个新世界是个新世界是个新世界是个新世界是个新世界是个新世界是个新世界是个新世界是个
@@ -166,13 +171,13 @@
         <p class="content">新世界的大家庭需要每一个爱生活的人的加入，如果你够年轻，有梦想，有激情</p>
         <p class="content">那就不要犹豫，快来加入我们，成为改变所有人生活的人</p>
         <div class="div8_left">
-            <h3>新世界志愿者协议</h3>
+            <h3 class="first_h3">新世界志愿者协议</h3>
             <p>加入新世界志愿者的人必须遵守中华人民共和国的相关法律法规，本着平等资源的原则……</p>
             <a href="#">more</a>
             <h3>新世界志愿者协议</h3>
             <p>加入新世界志愿者的人必须遵守中华人民共和国的相关法律法规，本着平等资源的原则……</p>
             <a href="#">more</a>
-            <h3>更多条款</h3>
+            <h3 class="last_h3">更多条款</h3>
             <a href="#">more</a>
         </div>
         <form>
