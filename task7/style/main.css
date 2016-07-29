@@ -137,28 +137,28 @@ main .div1_red p{
     top: 170px;
     margin: 0 auto;
 }
-.main_div4 form select{
-    width: 240px;
+#div4_form div{
+    width: 230px;
     height:40px;
     margin-right: 30px;
     padding-right: 10px;
     border:1px solid #aaa;
-    color: #8F8F8F;
-    /*清除现有selec样式*/
-    appearance:none;
-    -moz-appearance:none;
-    -webkit-appearance:none;
-    /*设置右侧下拉*/
-    background: #fff url(../img/pulldown.png) no-repeat scroll 210px center;
+    background-color: #fff;
+    display: inline-block;
 }
-#div4_form option{
-    background-color: #E3E3E4;
-    height: 28px;
-    line-height: 28px;
+#div4_form input{
+    width: 180px;
+    height:38px;
     font-family: "微软雅黑";
     font-size: 12px;
-    color: #333;
-    display: block;
+    color: #8F8F8F;
+    border: none;
+}
+#div4_form img{
+    width:20px;
+    height: 20px;
+    margin:10px 0;
+    float: right;
 }
 .hide {
     display: none;
@@ -166,7 +166,7 @@ main .div1_red p{
 #div4_form ul{
     border: 1px solid #e74f4d;
     border-top: none;
-    width: 238px;
+    width: 240px;
     position: absolute;
 }
 #div4_form ul li{
@@ -179,6 +179,14 @@ main .div1_red p{
     list-style-type: none;
     text-align: left;
     text-indent: 1em;
+}
+#ul_province{
+    position: relative;
+    left:276px;
+}
+#ul_city{
+    position: relative;
+    left:552px;
 }
 .main_div4 #search{
     width: 240px;
@@ -366,7 +374,7 @@ main .div1_red p{
     width:1000px;
     overflow: hidden;
     text-align: center;
-    margin:0 auto;
+    margin:0 auto 240px;
     position: relative;
 }
 .main_div8 .title{
@@ -472,4 +480,67 @@ main .div1_red p{
     position: absolute;
     left: 0;
     top:245px;
+}
+.main_div9{
+    height:360px;
+    background-color: #32353E;
+    padding-top: 100px;
+    text-align: center;
+}
+.main_div9 .title{
+   font-family: "黑体";
+    font-size: 21px;
+    line-height: 40px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.main_div9 .subtitle{
+    font-family: "宋体";
+    font-size: 12px;
+    line-height: 18px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.main_div9 .div9_sub{
+    height: 40px;
+    margin: 50px auto;
+}
+.main_div9 input[type="text"]{
+    width: 430px;
+    height:40px;
+    background-color: #fff;
+    border:none;
+    margin: 0;
+    display: inline-block;
+}
+.main_div9 input[type="button"]{
+    width:80px;
+    height:40px;
+    border:none;
+    margin: 0;
+}
+.main_div9 img{
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+footer{
+    height:60px;
+    background-color: #2F3039;
+    font-family: "宋体";
+    font-size: 12px;
+    color: #fff;
+    position: relative;
+}
+footer span{
+    position: absolute;
+    left:100px;
+    top:35px;
+}
+footer a{
+    position: absolute;
+    right:50px;
+    top:35px;
+    text-decoration: none;
+    color: #fff;
 }

@@ -76,15 +76,20 @@
             <p class="div4_p2">每个城市有不同的活动信息，请自助查询您所需要了解的城市</p>
         </div>
         <form id="div4_form">
-            <select id="country" name="country">
-                <option value="" selected>国家</option>
-                <option value="China">China</option>
-                <option value="UK">The UK</option>
-            </select>
-            <select id="province" name="province" onclick="selclick('province')">
-                <option value="" checked>省份</option>
-            </select>
-            <ul id="for_province" class="hide">
+            <div id="div_country" onclick="selclick('div_country')">
+                <input id="country" readonly placeholder="国家">
+                <img src="./img/pulldown.png" alt="img">
+            </div>
+            <ul id="ul_country" class="hide">
+                <li value="中国">中国</li>
+                <li value="美国">美国</li>
+                <li value="印度">印度</li>
+            </ul>
+            <div id="div_province"  onclick="selclick('div_province')">
+                <input id="provice" readonly placeholder="省份">
+                <img src="./img/pulldown.png" alt="img">
+            </div>
+            <ul id="ul_province" class="hide">
                 <li value="北京市">北京市</li>
                 <li value="四川省">四川省</li>
                 <li value="天津市">天津市</li>
@@ -93,9 +98,14 @@
                 <li value="内蒙古自治区">内蒙古自治区</li>
                 <li value="辽宁省">辽宁省</li>
             </ul>
-            <select id="city" name="city">
-                <option value="" selected>城市</option>
-            </select>
+            <div id="div_city" onclick="selclick('div_city')">
+                <input id="city" readonly placeholder="城市">
+                <img src="./img/pulldown.png" alt="img">
+            </div>
+            <ul id="ul_city" class="hide">
+                <li value="成都">成都</li>
+                <li value="上海">上海</li>
+            </ul>
             <input id="search" type="button" value="搜&nbsp&nbsp&nbsp索">
         </form>
     </div>
@@ -189,7 +199,24 @@
             <input type="button" value="提交申请">
         </form>
     </div>
+    <div class="main_div9">
+        <p class="title">联系我们</p>
+        <p class="subtitle">为了更好的获取我们最新的产品咨询，您可以留下您的电子邮箱快速订阅我们的产品咨询</p>
+        <p class="subtitle">也可以通过以下任何方式关注我们的动态</p>
+        <div class="div9_sub">
+            <input type="text" placeholder="someone@email.com">
+            <input type="button" value="提交">
+        </div>
+        <img src="./img/QQ.png" alt="img">
+        <img src="./img/weibo.png" alt="img">
+        <img src="./img/teitter.png" alt="img">
+        <img src="./img/shejiao.png" alt="img">
+    </div>
 </main>
+<footer>
+    <span>@2016新世界</span>
+    <a href="#top">Back to top</a>
+</footer>
 </body>
 <script src="./js/style_js.js"></script>
 </html>

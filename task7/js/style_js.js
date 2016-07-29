@@ -8,20 +8,18 @@ $(function(){
 });
 function selclick(objstr){
     switch(objstr){
-        case "country":
-            forselect(objstr,"for_country");break;
-        case "province":
-            forselect(objstr,"for_province");break;
-        case "city":
-            forselect(objstr,"for_city");break;
+        case "div_country":
+            forselect(objstr,"ul_country");break;
+        case "div_province":
+            forselect(objstr,"ul_province");break;
+        case "div_city":
+            forselect(objstr,"ul_city");break;
     }
 }
-function forselect(selstr, ulstr){
+function forselect(divstr, ulstr){
     //设置对应ul左上角位置
-    var selleft = document.getElementById(selstr).offsetLeft;
-    var seltop = document.getElementById(selstr).offsetTop;
-    $("#"+selstr).css("border" ,"1px solid #e74f4d");
-    $("#"+selstr).css("borderBottom", "none");
+    $("#"+divstr).css("border" ,"1px solid #e74f4d");
+    $("#"+divstr).css("borderBottom", "none");
     $("#"+ulstr).removeClass("hide");
-    $("#"+ulstr).css("left","275px");
 }
+
