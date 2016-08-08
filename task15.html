@@ -66,18 +66,20 @@ function sortAqiData(data) {
  */
 function render(data) {
 	var num = ["一","二","三","四","五","六","七","八","九","十"],
-		newnode,newb,
+		newnode,newb,str="",
 		resort_ul = document.getElementById("resort");
 	
 	for(var i=0,len=data.length; i<len; i++){
-		newnode = document.createElement("li");
+		/*newnode = document.createElement("li");
 		newText = document.createTextNode("第"+num[i]+"名： "+data[i][0]+"空气质量：");
 		newnode.appendChild(newText);
 		newb = document.createElement("b");
 		newb.innerHTML = data[i][1];
 		newnode.appendChild(newb);
-		resort_ul.appendChild(newnode);
+		resort_ul.appendChild(newnode);*/
+		str = str+"<li>第"+num[i]+"名： "+data[i][0]+"空气质量：<b>"+data[i][1]+"</b></li>";
 	}
+	resort_ul.innerHTML = str;
 }
 
 function btnHandle() {
