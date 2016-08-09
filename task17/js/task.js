@@ -52,6 +52,7 @@ var aqiSourceData = {
 
 // 用于渲染图表的数据
 var chartData = {};
+var citys = [];
 
 // 记录当前页面的表单选项
 var pageState = {
@@ -132,7 +133,8 @@ function initCitySelector() {
     // 读取aqiSourceData中的城市，然后设置id为city-select的下拉列表中的选项
     var str_select = "";
     for(city in aqiSourceData){
-        str_select = str_select+"<option value="+city+">"+city+"</option>"
+        str_select = str_select+"<option value="+city+">"+city+"</option>";
+        citys.push(city);
     }
     city_select.innerHTML = str_select;
     // 给select设置事件，当选项发生变化时调用函数citySelectChange
@@ -150,18 +152,21 @@ function initCitySelector() {
  */
 function initAqiChartData() {
     // 将原始的源数据处理成图表需要的数据格式
-    var city_index = pageState.nowSelectCity,
-        
+    var city = citys[pageState.nowSelectCity],
+        datas = aqiSourceData[city];
         gratime = pageState.nowGraTime;
     if(gratime === "week"){
 
     }else if(gratime === "month"){
 
     }else{
+        //以天为粒度
+        console.log(datas);
+        for(var date in datas){
 
+        }
     }
 
-    console.log(aqiSourceData);
     // 处理好的数据存到 chartData 中
 }
 

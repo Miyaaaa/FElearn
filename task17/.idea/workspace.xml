@@ -28,8 +28,8 @@
           <file leaf-file-name="task.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/task.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.48950276" vertical-offset="2728" max-vertical-offset="3780">
-                  <caret line="153" column="8" selection-start-line="153" selection-start-column="8" selection-end-line="153" selection-end-column="8" />
+                <state vertical-scroll-proportion="0.54452056" vertical-offset="3009" max-vertical-offset="3885">
+                  <caret line="168" column="0" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -236,7 +236,16 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/task.js</url>
+          <line>155</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="3" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/js/task.js">
@@ -281,8 +290,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/task.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48950276" vertical-offset="2728" max-vertical-offset="3780">
-          <caret line="153" column="8" selection-start-line="153" selection-start-column="8" selection-end-line="153" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.54452056" vertical-offset="3009" max-vertical-offset="3885">
+          <caret line="168" column="0" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
           <folding />
         </state>
       </provider>
