@@ -80,9 +80,6 @@ function graTimeChange() {
             renderChart();
         }
     }
-    // 设置对应数据
-
-    // 调用图表渲染函数
 }
 
 /**
@@ -111,6 +108,20 @@ function initGraTimeForm() {
                 graTimeChange();
             }
         },false);
+    }else if(form_gra_time.attachEvent){
+        form_gra_time.attachEvent("onclick", function(event){
+            event = event||window.event;
+            if(event.srcElement.nodeName.toLowerCase() === "input"){
+                graTimeChange();
+            }
+        });
+    }else{
+        form_gra_time.onclick = function(event){
+            event = event||window.event;
+            if(event.target.nodeName.toLowerCase() === "input" || event.srcElement.nodeName.toLowerCase() === "input"){
+                graTimeChange();
+            }
+        };
     }
 }
 
@@ -139,6 +150,18 @@ function initCitySelector() {
  */
 function initAqiChartData() {
     // 将原始的源数据处理成图表需要的数据格式
+    var city_index = pageState.nowSelectCity,
+        
+        gratime = pageState.nowGraTime;
+    if(gratime === "week"){
+
+    }else if(gratime === "month"){
+
+    }else{
+
+    }
+
+    console.log(aqiSourceData);
     // 处理好的数据存到 chartData 中
 }
 
