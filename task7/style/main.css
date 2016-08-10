@@ -25,6 +25,8 @@ main .div1_cover{
     -moz-opacity:0.2;
     opacity:0.2;
 }
+
+/* TODO: CSS很多属性(比如 font-sze )是会继承祖辈元素的, 所以不用再进行设置. 除非不同于祖辈, 才去"层叠"一个权重更高的样式*/
 main .div1_p1{
     margin-bottom : 30px;
     font-family: 微软雅黑;

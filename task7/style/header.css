@@ -1,7 +1,11 @@
+
 *{
+    /* TODO: 值为0一般不写单位, 你看, ws为你警示了*/
     margin : 0px;
     padding : 0px;
+    /* TODO: font-family这个属性的值要注意, 后面加上", serif", 因为有可能某些设备上没有微软雅黑, 他就会选择默认的无衬线字体, 参考http://www.w3school.com.cn/cssref/css_websafe_fonts.asp*/
     font-family: 微软雅黑;
+    /* TODO: 这个字体一般加载body上面, 然后让后代去继承*/
     font-size: 12px;
 }
 body{
@@ -16,6 +20,7 @@ header{
     vertical-align : middle;
 }
 header .header_left{
+    /* TODO: 属性的书写顺序很重要, 这样便于维护, 参考http://codeguide.bootcss.com/*/
     float : left;
     height : 58px;
     width : 150px;
@@ -47,6 +52,8 @@ header .header_right{
     margin-right: 60px;
     margin-left: 10px;
 }
+
+
 header .enroll{
     position : absolute;
     right : 0px;
@@ -58,7 +65,6 @@ header .enroll{
 }
 header .pic2{
     margin : 19px 5px 0px 0px;
-
 }
 
 header nav ul li{
@@ -80,6 +86,7 @@ header li a{
     color : #808080;
 }
 header .active {
+    /* TODO: 这个地方没处理对, 你单方面给了它border会导致它的盒子变大哦. 具体参考"改进建议"*/
     border-bottom: 5px solid #e74f4d;
 }
 header .first_page{
