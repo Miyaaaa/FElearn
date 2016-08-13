@@ -14,11 +14,13 @@
 <!--header begin-->
 <header>
     <div class="header_left">
-        <img class="pic1" src="./img/header_pic1.png"/><span class="newworld">新世界</span>
+        <!--<img class="pic1" src="./img/header_pic1.png"/>-->
+        <span class="newworld">新世界</span>
     </div>
     <!-- TODO: login这里需要改进, 具体参考"改进建议"-->
     <div class="header_right">
-        <img class="pic2" src="./img/header_pic2.png"><a class="enroll" href="#">登录</a>
+        <!--<img class="pic2" src="./img/header_pic2.png">-->
+        <a class="enroll" href="#">登录</a>
     </div>
     <nav>
         <ul>
@@ -43,7 +45,7 @@
             <p class="div1_p2">新时代，年轻的人们让我们一起</p>
             <p class="div1_p2">体验新生活，享受新生活</p>
             <!-- TODO: start这里, 需要改进具体参考"改进建议"-->
-            <div class="div1_red">开始体验</div>
+            <a class="div1_red" href="#">开始体验</a>
         </div>
     </div>
     <div class="main_div2">
@@ -84,7 +86,7 @@
             <p class="div4_hr"></p>
             <p class="div4_p2">每个城市有不同的活动信息，请自助查询您所需要了解的城市</p>
         </div>
-        <form id="div4_form">
+        <!--<form id="div4_form">
             <div id="div_country" onclick="selclick('div_country')">
                 <input id="country" readonly placeholder="国家">
                 <img src="./img/pulldown.png" alt="img">
@@ -115,6 +117,43 @@
                 <li value="成都">成都</li>
                 <li value="上海">上海</li>
             </ul>
+            <input id="search" type="button" value="搜&nbsp&nbsp&nbsp索">
+        </form>
+        -->
+        <form id="div4_form">
+            <div id="country-select">
+                <div class="select-sub" id="div_country" onclick="selclick('country')">
+                    <input id="country" readonly placeholder="国家">
+                </div>
+                <ul id="ul_country" class="hide">
+                    <li value="中国">中国</li>
+                    <li value="美国">美国</li>
+                    <li value="印度">印度</li>
+                </ul>
+            </div>
+            <div id="province-select">
+                <div class="select-sub" id="div_province"  onclick="selclick('province')">
+                    <input id="provice" readonly placeholder="省份">
+                </div>
+                <ul id="ul_province" class="hide">
+                    <li value="北京市">北京市</li>
+                    <li value="四川省">四川省</li>
+                    <li value="天津市">天津市</li>
+                    <li value="河北省">河北省</li>
+                    <li value="陕西省">陕西省</li>
+                    <li value="内蒙古自治区">内蒙古自治区</li>
+                    <li value="辽宁省">辽宁省</li>
+                </ul>
+            </div>
+            <div id="city-select">
+                <div class="select-sub" id="div_city" onclick="selclick('city')">
+                    <input id="city" readonly placeholder="城市">
+                </div>
+                <ul id="ul_city" class="hide">
+                    <li value="成都">成都</li>
+                    <li value="上海">上海</li>
+                </ul>
+            </div>
             <input id="search" type="button" value="搜&nbsp&nbsp&nbsp索">
         </form>
     </div>

@@ -63,6 +63,7 @@ var pageState = {
 /**
  * 渲染图表
  */
+/*
 function renderChart() {
     var city = citys[pageState.nowSelectCity],//当前选中城市
         gratime = pageState.nowGraTime,//当前时间粒度
@@ -74,12 +75,26 @@ function renderChart() {
                 '#488f0f','#455c33','#d3d124','#d39324'],
         color_len = colors.length;
     for(var i=0; i<len; i++){
-        chart_str += "<div class="+div_class+" style=\"height:"+datas[i]+"px;background-color:"+colors[i%color_len]+ "\"></div>";
+        chart_str += "<div class="+div_class+" style=\"height:"+datas[i]+"px;background-color:"+colors[i%color_len]+ "\" title='"+datas[i]+"'></div>";
+    }
+    aqi_chart_wrap.innerHTML = chart_str;
+}*/
+function renderChart() {
+    var city = citys[pageState.nowSelectCity],//当前选中城市
+        gratime = pageState.nowGraTime,//当前时间粒度
+        datas = chartData[city][gratime],//需要渲染的数据array类型
+        div_class = gratime+"_div",
+        chart_str = "",
+        len=datas.length,
+        colors =['#87d4d4','#0a4242','#7836d1','#baa1db','#3e1674','#a12d12','#dd8672',
+            '#488f0f','#455c33','#d3d124','#d39324'],
+        color_len = colors.length;
+    for(var i=0; i<len; i++){
+        chart_str += "<div class="+div_class+" style=\"height:"+datas[i][1]+"px;background-color:"+colors[i%color_len]+ "\" title=' "+datas[i][0]+"&nbsp;&nbsp;[AQI]="+datas[i][1]+"' ></div>";
     }
     console.log(chart_str);
     aqi_chart_wrap.innerHTML = chart_str;
 }
-
 /**
  * 日、周、月的radio事件点击时的处理函数
  */
@@ -163,6 +178,7 @@ function initCitySelector() {
 /**
  * 初始化图表需要的数据格式
  */
+/*
 function initAqiChartData() {
     // 将原始的源数据处理成图表需要的数据格式
     var original_datas,
@@ -210,6 +226,58 @@ function initAqiChartData() {
         arr_week = [];
         arr_month = [];
     }
+}*/
+function initAqiChartData() {
+    // 将原始的源数据处理成图表需要的数据格式
+    var original_datas,
+        arr_day=new Array(),arr_day1=new Array(), //以天为粒度数据块
+        arr_week = new Array(), //周
+        i_week= 0,j= 2,sum_week=0,
+        sum_month= 0,i_month= 0,
+        arr_month=new Array(), i,len;//月
+    for(var city in aqiSourceData){
+        original_datas = aqiSourceData[city];
+
+        for(var date in original_datas){
+            // 设置以天为粒度的数据 {"day": [day1,day2...]}
+            arr_day1.push([date,original_datas[date]]);
+            arr_day.push(original_datas[date]);
+            // 设置以月为粒度
+            sum_month += original_datas[date];
+            i_month++;
+            if(date === "2016-01-31" || date === "2016-02-29" || date === "2016-03-31"){
+                arr_month.push([date.substr(0,7),parseInt((sum_month/i_month))]);
+                sum_month = 0;
+                i_month = 0;
+            }
+        }
+
+        // 设置以周为粒度的数据 {"week": [day1,day2...]}
+        // 先刨去前三天（2016-1-1是周五
+        arr_week.push(["第1周",parseInt((arr_day[0]+arr_day[1]+arr_day[2])/3)]);
+        // 剩下的以7天唯一周期
+        for(i=3,len=arr_day.length; i<len; i++){
+            sum_week += arr_day[i];
+            i_week++;
+            if(i_week === 7){
+                i_week = 0;
+                arr_week.push(["第"+j+"周",parseInt((sum_week/7))]);
+                sum_week = 0;
+                j++;
+            }
+            if(i === len-1 && i_week !== 0){
+                arr_week.push(["第"+j+"周",parseInt(sum_week/i_week)]);
+                i_week = 0;
+                sum_week = 0;
+                j=2;
+            }
+        }
+        chartData[city] = {"day":arr_day1,"week":arr_week,"month":arr_month};
+        arr_day = [];
+        arr_day1 = [];
+        arr_week = [];
+        arr_month = [];
+    }
 }
 
 /**
@@ -219,6 +287,7 @@ function init() {
     initGraTimeForm()
     initCitySelector();
     initAqiChartData();
+    renderChart();
 }
 
 init();
