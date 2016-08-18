@@ -44,7 +44,7 @@ nav ul li a:hover{color: #999;}
 main{
     float: left;
     width: 100%;
-    background: url(../images/cont-tail.jpg) repeat-y left 216px;
+    background: url(../images/cont-tail.jpg) repeat-y left top;
     overflow: hidden;
 }
 .content{
