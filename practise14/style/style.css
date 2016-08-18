@@ -1,0 +1,238 @@
+body{
+    font-family: Verdana, "微软雅黑",sans-serif;
+    background-color: black;
+}
+.wrap{
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/*header style begin*/
+header{
+    float: left;
+    width: 100%;
+    background: url(../images/header-bg.jpg) no-repeat left top;
+}
+.logo{padding: 100px 0 70px 50px;}
+nav{
+    width: 100%;
+    /*overflow: hidden;*/
+}
+ul{
+    width: 875px;
+    height: 40px;
+    margin: 0 auto;
+}
+nav ul li a{
+    display: inline-block;
+    float: left;
+    width: 135px;
+    /*height: 50px;*/
+    padding: 0 20px;
+
+    text-align: center;
+    font-family: Comic Sans MS,sans-serif;
+    font-size: 25px;
+    color: #000;
+}
+nav ul li a:hover{color: #999;}
+/*header style end*/
+
+
+/*main style begin*/
+main{
+    float: left;
+    width: 100%;
+    background: url(../images/cont-tail.jpg) repeat-y left 216px;
+    overflow: hidden;
+}
+.content{
+    padding: 60px 95px;
+    background: url(../images/cont-top.jpg) no-repeat left top,
+                url(../images/cont-bot.jpg) no-repeat left bottom;
+    overflow: hidden;
+}
+.content-left{
+    float: left;
+    width: 300px;
+    /*overflow: hidden;*/
+}
+.news {
+    width: 230px;
+    overflow: hidden;
+}
+.news h3{padding-bottom: 15px;}
+.news dl dd{height: 75px;}
+.news dl dd a{
+    display: inline-block;
+    font-weight: bold;
+    color: #fff;
+}
+.news dl dd a:hover{
+    background-color: #000;
+}
+.a-decoration{text-decoration: underline; font-weight: bold;}
+.a-decoration:hover{text-decoration: none;}
+.a-decoration-art{font-weight: bold;}
+.a-decoration-art:hover{text-decoration: underline;}
+.poll{
+    width: 230px;
+    padding-top: 40px;
+    overflow: hidden;
+}
+.poll>label{
+    display: block;
+    padding: 15px 0 25px;
+    font-weight: bold;
+    color: #fff;
+}
+.poll dl dd{height: 28px;}
+.submit{
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+}
+.submit input[type="button"]{
+    width: 100px;
+    height: 30px;
+
+    line-height: 30px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #202020;
+    border: none;
+    border-radius: 5px;
+}
+
+/*变化内容 begin*/
+.content-right{
+    float: left;
+    width: 510px;
+    overflow: hidden;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+dl dd img{float: left;}
+dl dd a{display: block;}
+/*home page begin*/
+.welcome p{
+    padding-top: 15px;
+    line-height: 1.5em;
+}
+.welcome img{
+    float: left;
+}
+.art{padding-top: 40px;}
+.art h3{margin-bottom: 10px;}
+.art dl dd{height: 90px;}
+.art dl dd img{float: left;}
+
+/*home page end*/
+/*about us begin*/
+.website p{
+    padding-top: 15px;
+}
+.team{
+    padding-top: 40px;
+}
+.team dl{
+    padding-top: 20px;
+}
+.team dl dd{
+    height: 120px;
+}
+.team dl dd p{
+    padding-top: 10px;
+}
+.team img{
+    padding-right: 20px;
+    padding-top: 5px;
+}
+/*about us end*/
+
+/*article begin*/
+.article{
+
+}
+.article dl{
+    padding-top: 20px;
+}
+.article dl dd{
+    height: 120px;
+}
+.article dl dd img{
+    padding-right: 20px;
+    padding-top: 10px;
+}
+.article dl dd p{
+    padding-top: 10px;
+}
+/*article end*/
+/*contact us begin*/
+.contact-us form{
+    padding-top: 20px;
+}
+.contact-us tr{
+    height: 30px;
+}
+.contact-us td{
+    vertical-align: top;
+}
+.contact-us .td-left{
+    width: 100px;
+    font-weight: bold;
+}
+.contact-us input[type="text"]{
+    width: 230px;
+    height: 20px;
+    border: 1px solid #000;
+    background-color: #CEB797;
+}
+.contact-us textarea{
+    width: 410px;
+    height: 450px;
+    border: 1px solid #000;
+    background-color: #CEB797;
+}
+.contact-us .submit{
+    text-align: right;
+}
+/*contact us end*/
+
+/*site map begin*/
+.site-map p{
+    padding-top: 20px;
+}
+.site-map>ul{
+    height: auto;
+    padding-top: 15px;
+}
+.site-map li{
+    padding-bottom: 3px;
+    padding-left: 8px;
+    font-weight: bold;
+    background: url(../images/arrow.gif) no-repeat left 6px;
+}
+.site-map li ul{
+    height: auto;
+}
+/*site map end*/
+
+/*变化内容 end*/
+/*main style end*/
+
+/*footer style begin*/
+footer{
+    float: left;
+    width: 100%;
+    padding-bottom: 40px;
+    overflow: hidden;
+    text-align: center;
+    background: url(../images/footer-bg.jpg) no-repeat left top;
+}
+/*footer style end*/
