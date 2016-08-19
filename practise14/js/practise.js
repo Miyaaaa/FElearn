@@ -1,6 +1,7 @@
 /**
  * Created by admin on 2016/8/17.
  */
+/*
 window.onload = function(){
     var i,len,
         oNavA = document.getElementsByTagName("nav")[0].getElementsByTagName("a"),
@@ -42,4 +43,28 @@ window.onload = function(){
         }
     }
 
+}*/
+window.onload = function(){
+    var i,len,
+        oNavA = document.getElementsByTagName("nav")[0].getElementsByTagName("a"),
+        oDiv={};
+    // 获取不同连接的div
+    for(i=0,len=oNavA.length; i<len; i++){
+        var str = oNavA[i].getAttribute("data-value");
+        oDiv[str] = document.getElementsByClassName(str)[0];
+    }
+    document.onclick = function (event) {
+        event = event || window.event;
+        var target = event.target || event.srcElement;
+        if(target.className.indexOf("url-tag") !== -1){
+            // 先隐藏所有
+            for(var e in oDiv){
+                oDiv[e].className = e+" hide";
+            }
+            // 显示点击的
+            oDiv[target.getAttribute("data-value")].className = target.getAttribute("data-value")+" show";
+        }else{
+            return;
+        }
+    }
 }

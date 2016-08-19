@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33d90b95-f792-4470-942c-7c35055c099e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/practise14/a.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/practise14/practise.html" afterPath="$PROJECT_DIR$/practise14/practise.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/practise14/js/practise.js" afterPath="$PROJECT_DIR$/practise14/js/practise.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/交流.md" afterPath="$PROJECT_DIR$/交流.md" />
     </list>
     <ignored path="FElearn.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,24 +37,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="practise.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="practise.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/practise14/practise.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.0625">
-              <caret line="19" column="36" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="36" />
+            <state vertical-scroll-proportion="-6.607192">
+              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="交流.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="交流.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/交流.md">
           <provider editor-type-id="MarkdownPreviewEditor">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7933884">
-              <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+            <state vertical-scroll-proportion="-16.413794">
+              <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -75,8 +74,10 @@
         <entry file="file://$PROJECT_DIR$/practise14/js/practise.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-              <folding />
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -113,8 +114,8 @@
         <option value="$PROJECT_DIR$/waterfall/index.html" />
         <option value="$PROJECT_DIR$/task7/bdtask7.html" />
         <option value="$PROJECT_DIR$/practise14/a.html" />
-        <option value="$PROJECT_DIR$/practise14/practise.html" />
         <option value="$PROJECT_DIR$/交流.md" />
+        <option value="$PROJECT_DIR$/practise14/practise.html" />
       </list>
     </option>
   </component>
@@ -394,7 +395,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -574,8 +577,10 @@
     <entry file="file://$PROJECT_DIR$/practise14/js/practise.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -587,21 +592,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/practise14/practise.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.0625">
-          <caret line="19" column="36" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/交流.md">
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7933884">
-          <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+        <state vertical-scroll-proportion="-16.413794">
+          <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practise14/practise.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.607192">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
           <folding />
         </state>
       </provider>
