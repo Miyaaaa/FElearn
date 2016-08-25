@@ -1,0 +1,154 @@
+header {
+    overflow: hidden;
+    background: url(../img/slide-3.jpg) no-repeat center top;
+}
+
+.slide-prev {
+    float: left;
+    width: 31px;
+    height: 402px;
+    background: url("../img/slider-prev.png") no-repeat left top;
+}
+
+.slide-next {
+    float: right;
+    width: 31px;
+    height: 402px;
+    background: url("../img/slider-next.png") no-repeat right top;
+}
+.slide-word{
+    width: 880px;
+    padding-top: 50px;
+    text-align: center;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: inline-block;
+}
+.slide-word span{
+    display: block;
+    font-family: "Comic Sans MS",sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+.span1{
+    font-size: 60px;
+    line-height: 60px;
+}
+.span2{
+    font-size: 80px;
+    line-height: 80px;
+}
+.slide-word .slide-red{
+    color: red;
+}
+.main-left {
+    float: left;
+    width: 630px;
+}
+
+.pro {
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+
+.pro-item {
+    float: left;
+    width: 150px;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+.pro-item-first {
+    padding-left: 0;
+}
+
+.pro-item img {
+    margin-bottom: 15px;
+}
+
+.pro-item p {
+    padding-top: 5px;
+}
+
+.breeder {
+    padding-top: 35px;
+}
+
+.breeder-banner {
+    padding: 0 190px 30px 40px;
+    background: #292929 url("../img/banner-box-img.png") no-repeat right top;
+}
+
+.breeder-banner h3 {
+    padding-top: 20px;
+    line-height: 26px;
+}
+
+.breeder-banner h4 {
+    font-weight: normal;
+    letter-spacing: -1px;
+}
+
+.quote {
+    padding-top: 10px;
+    line-height: 20px;
+    font-style: italic;
+}
+
+.quote:before {
+    display: inline-block;
+    width: 18px;
+    height: 13px;
+    content: "";
+    background: url("../img/quote-before.png") no-repeat left top;
+}
+
+.quote span.orange {
+    color: orange;
+}
+
+.quote:after {
+    display: inline-block;
+    width: 18px;
+    height: 13px;
+    content: "";
+    background: url("../img/quote-after.png") no-repeat right bottom;
+}
+
+.author-div {
+    padding-top: 15px;
+    padding-right: 10px;
+}
+
+.author {
+    color: #fff;
+    font-weight: bold;
+}
+
+.author-remark {
+    font-style: italic;
+}
+
+.main-right {
+    float: left;
+    width: 190px;
+    padding-left: 50px;
+}
+
+.welcome {
+    padding-bottom: 20px;
+}
+
+.welcome p {
+    padding-top: 10px;
+}
+
+.program {
+    padding-top: 70px;
+}
+
+
+

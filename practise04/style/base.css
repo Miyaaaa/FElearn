@@ -1,0 +1,238 @@
+body {
+    margin: 0;
+!important;
+    background: url(../img/body-bg.gif) repeat left top;
+    color: #707070;
+}
+
+.main-bg {
+
+    background: url(../img/main-bg.jpg) no-repeat left top;
+}
+
+.wrap {
+    width: 950px;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+
+.a-nav {
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+.a-nav:hover, .nav-active {
+    color: #999;
+    background: url("../img/nav-active.png") no-repeat center top;
+}
+
+img {
+    display: block;
+}
+
+/*header begin*/
+.head-top {
+    position: relative;
+    padding: 26px 40px;
+    /*overflow: hidden;*/
+    background: url("../img/header-bg.png") repeat left top;
+}
+
+h1 {
+    float: left;
+    margin: 0;
+!important;
+    padding: 0;
+!important;
+    font-size: 0;
+    overflow: hidden;
+}
+
+h1 > a {
+    display: inline-block;
+    width: 187px;
+    height: 58px;
+}
+
+nav {
+    position: relative;
+    float: right;
+    padding-top: 14px;
+}
+
+nav li.nav-li{
+    position: relative;
+    float: left;
+    display: inline-block;
+    height: 28px;
+    margin: 0 28px;
+}
+.subnav-li{
+    width: 185px;
+    height: 30px;
+    padding-left: 15px;
+    margin-bottom: 1px;
+    background: url("../img/sub-nav-tail.png") repeat left top;
+}
+.subnav-ul{
+    position: absolute;
+    display: none;
+    z-index: 2;
+}
+.sub1{
+    left: 201px;
+    top: 57px
+}
+.a-subnav{
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #fff;
+}
+.a-subnav:hover{
+    color: #707070;
+}
+/*header end*/
+
+h2, h3, h4, h5 {
+    font-family: Comic Sans MS, sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+
+.orange {
+    color: orange;
+}
+
+.red {
+    color: #B30404;
+}
+
+a.marker {
+    background: url("../img/link-marker.gif") no-repeat right center;
+}
+
+a.orange {
+    color: orange;
+}
+
+a.orange:hover {
+    text-decoration: underline;
+}
+
+a.underline {
+    padding-right: 10px;
+    text-decoration: underline;
+}
+
+a.underline:hover {
+    text-decoration: none;
+}
+
+a.underline-grey {
+    color: #707070;
+    text-decoration: underline;
+}
+
+a.underline-grey:hover {
+    text-decoration: none;
+}
+
+a.list-a {
+    padding-left: 15px;
+    background: url("../img/list-1-marker.gif") no-repeat left center;
+    color: #999;
+}
+
+a.list-a:hover {
+    color: #fff;
+}
+
+a.product-name {
+    color: orange;
+}
+
+a.product-name:hover {
+    text-decoration: underline;
+}
+
+span.price {
+    color: #B30404;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.grey-btm {
+    border-bottom: 1px solid #555;
+}
+
+li.list-li {
+    height: 28px;
+    line-height: 28px;
+    font-size: 13px;
+}
+
+li.list-li .last-li {
+    border-bottom: 1px solid transparent;
+}
+
+.grey {
+    color: #707070;
+}
+
+/*main begin*/
+main {
+    padding: 30px 40px 0;
+    background: url("../img/body-bg.gif") repeat left top;
+}
+
+.wrapper {
+    overflow: hidden;
+    padding-bottom: 50px;
+    border-bottom: 2px solid #999;
+}
+
+.read-more {
+    padding-top: 10px;
+}
+
+/*main end*/
+
+/*footer begin*/
+footer {
+    overflow: hidden;
+    padding: 25px 40px 40px;
+    background: url("../img/body-bg.gif") repeat left top;
+}
+
+.copyright {
+    float: left;
+    width: 260px;
+}
+
+footer span.logo {
+    font-size: 24px;
+}
+
+footer .list {
+    float: left;
+    padding-left: 50px;
+}
+
+footer .list h4 {
+    line-height: 20px;
+}
+
+footer .pic {
+    float: right;
+    width: 27px;
+}
+
+footer .pic img {
+    background: #707070;
+    margin-bottom: 5px;
+}
+
+/*footer end*/

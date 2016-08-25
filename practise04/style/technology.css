@@ -1,0 +1,62 @@
+.main-left {
+    float: left;
+    width: 550px;
+}
+
+.tech {
+    padding: 15px 0 15px;
+    overflow: hidden;
+}
+
+.tech img {
+    float: left;
+}
+
+.tech-des {
+    width: 310px;
+    float: left;
+    overflow: hidden;
+    padding-left: 10px;
+}
+
+.tech-des-content {
+    padding: 10px 0 0 35px;
+}
+
+.main-right {
+    float: left;
+    width: 270px;
+    padding-left: 50px;
+    overflow: hidden;
+}
+
+.main-right h2 {
+    letter-spacing: -1px;
+}
+
+.stands {
+    overflow: hidden;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.stands .num {
+    display: inline-block;
+    float: left;
+    font-size: 24px;
+}
+
+.stands-des {
+    float: right;
+    width: 230px;
+    padding-top: 12px;
+}
+
+.stands-supply p {
+    padding-top: 10px;
+    font-style: italic;
+}
+
+.title {
+    color: #fff;
+}

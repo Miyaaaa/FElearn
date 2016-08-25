@@ -1,0 +1,26 @@
+.product-item {
+    float: left;
+    width: 290px;
+}
+
+.product-item img {
+    float: left;
+}
+
+.product-item p {
+    padding-top: 10px;
+}
+
+.product-des {
+    padding-left: 160px;
+    padding-right: 10px;
+}
+
+.product-row {
+    overflow: hidden;
+    padding-top: 40px;
+}
+
+.product-row-first {
+    padding-top: 15px;
+}

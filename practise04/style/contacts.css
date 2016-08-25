@@ -1,0 +1,80 @@
+.main-left {
+    float: left;
+    width: 240px;
+}
+
+.p1 {
+    padding-top: 10px;
+}
+
+.address {
+
+}
+
+.address tr {
+    height: 18px;
+    line-height: 18px;
+}
+
+.t1 {
+    margin-top: 5px;
+}
+
+.t2 {
+    margin-top: 15px;
+}
+
+.td-left {
+    width: 70px;
+    text-align: right;
+}
+
+.td-right {
+    width: 130px;
+    padding-left: 5px;
+}
+
+.main-right {
+    float: left;
+    width: 580px;
+    padding-left: 50px;
+    overflow: hidden;
+}
+
+.cust-info tbody tr {
+    display: block;
+    padding-top: 5px;
+}
+
+.cust-td-left {
+    width: 70px;
+    text-align: right;
+    vertical-align: top;
+}
+
+.cust-td-right {
+    width: 510px;
+    padding-left: 10px;
+}
+
+.cust-ipt {
+    width: 510px;
+    height: 26px;
+    border: 1px solid #999;
+    background: #2F2F2F;
+}
+
+.cust-text {
+    width: 510px;
+    height: 126px;
+    border: 1px solid #999;
+    background: #2F2F2F;
+}
+
+.more {
+    padding-top: 20px;
+}
+
+.send-a {
+    padding-left: 50px;
+}
