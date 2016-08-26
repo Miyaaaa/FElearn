@@ -57,7 +57,8 @@ h1 > a {
 nav {
     position: relative;
     float: right;
-    padding-top: 14px;
+    padding-top: 20px;
+    padding-right: 20px;
 }
 
 nav li.nav-li{
@@ -65,7 +66,8 @@ nav li.nav-li{
     float: left;
     display: inline-block;
     height: 28px;
-    margin: 0 28px;
+    /*margin: 0 28px;*/
+    margin-left: 56px;
 }
 .subnav-li{
     width: 185px;
@@ -203,7 +205,7 @@ main {
 /*footer begin*/
 footer {
     overflow: hidden;
-    padding: 25px 40px 40px;
+    padding: 20px 40px 40px;
     background: url("../img/body-bg.gif") repeat left top;
 }
 
@@ -218,7 +220,11 @@ footer span.logo {
 
 footer .list {
     float: left;
-    padding-left: 50px;
+    padding-left: 55px;
+    padding-top: 10px;
+}
+footer .list ul{
+    padding-top: 10px;
 }
 
 footer .list h4 {
@@ -228,6 +234,7 @@ footer .list h4 {
 footer .pic {
     float: right;
     width: 27px;
+    padding-top: 10px;
 }
 
 footer .pic img {

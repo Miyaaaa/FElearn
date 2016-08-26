@@ -1,20 +1,20 @@
 header {
     overflow: hidden;
-    background: url(../img/slide-3.jpg) no-repeat center top;
+    background: url(../img/slide-1.jpg) no-repeat center top;
 }
 
 .slide-prev {
     float: left;
     width: 31px;
     height: 402px;
-    background: url("../img/slider-prev.png") no-repeat left top;
+    background: url("../img/slider-prev.png") no-repeat -31px top;
 }
 
 .slide-next {
     float: right;
     width: 31px;
     height: 402px;
-    background: url("../img/slider-next.png") no-repeat right top;
+    background: url("../img/slider-next.png") no-repeat left top;
 }
 .slide-word{
     width: 880px;
@@ -74,7 +74,7 @@ header {
 }
 
 .breeder {
-    padding-top: 35px;
+    padding-top: 45px;
 }
 
 .breeder-banner {
@@ -84,7 +84,9 @@ header {
 
 .breeder-banner h3 {
     padding-top: 20px;
+    height: 26px;
     line-height: 26px;
+    letter-spacing: -1px;
 }
 
 .breeder-banner h4 {
@@ -93,7 +95,7 @@ header {
 }
 
 .quote {
-    padding-top: 10px;
+    padding-top: 20px;
     line-height: 20px;
     font-style: italic;
 }
@@ -126,6 +128,8 @@ header {
 .author {
     color: #fff;
     font-weight: bold;
+    font-size: 14px;
+    letter-spacing:2px;
 }
 
 .author-remark {
@@ -139,7 +143,7 @@ header {
 }
 
 .welcome {
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 
 .welcome p {
@@ -148,6 +152,9 @@ header {
 
 .program {
     padding-top: 70px;
+}
+.program ul{
+    padding-top: 5px;
 }
 
 
