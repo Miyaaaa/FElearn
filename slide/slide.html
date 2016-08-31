@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>slide</title>
+    <style type="text/css">
+        .wrap{
+            position: relative;
+            width: 150px;
+            height: 120px;
+            margin: 50px auto;
+        }
+        .div1,.div2{
+            position: absolute;
+            left:0;
+            top:0;
+            width: 150px;
+            height: 120px;
+        }
+        .div1{
+            -webkit-animation: fadeIn 2s ease 1s 1  both;
+                -ms-animation: fadeIn 2s ease 1s 1  both;
+               -moz-animation: fadeIn 2s ease 1s 1  both;
+                 -o-animation: fadeIn 2s ease 1s 1  both;
+                    animation: fadeIn 2s ease 1s 1  both;
+            background:url(img1.jpg) no-repeat center center;
+        }
+        .div2{
+            -webkit-animation: fadeOut 1s ease 1s 1 both;
+                -ms-animation: fadeOut 1s ease 1s 1 both;
+               -moz-animation: fadeOut 1s ease 1s 1 both;
+                 -o-animation: fadeOut 1s ease 1s 1 both;
+                    animation: fadeOut 1s ease 1s 1 both;
+            background:url(img2.jpg) no-repeat center center;
+        }
+        @-webkit-keyframes fadeOut {0% {opacity: 1;}100% {opacity: 0;}}
+                @keyframes fadeOut {0% {opacity: 1;}100% {opacity: 0;}}
+        @-webkit-keyframes fadeIn {0% {opacity: 0; }100% {opacity: 1;}}
+                @keyframes fadeIn {0% {opacity: 0;}100% {opacity: 1;}}
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="div1"></div>
+    <div class="div2"></div>
+</div>
+</body>
+</html>
