@@ -27,6 +27,7 @@ window.onload = function () {
             return;
         }
         if(confirm("are you sure to delete")){
+            alert("弹出数据："+datas[0]);
             datas.splice(0,1);
             displayDatas();
         }else{
@@ -52,7 +53,8 @@ window.onload = function () {
             return;
         }
         if(confirm("are you sure to delete")){
-            datas.pop();
+            var num = datas.pop();
+            alert("弹出数据："+num);
             displayDatas();
         }else{
             return;
