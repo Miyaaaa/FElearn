@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.clear{
+    content: "";
+    display: block;
+    clear: both;
+}
+.main-wrapper{
+    width: 800px;
+    margin: 0 auto;
+    padding-top: 50px;
+    text-align: center;
+}
+.ipt-section *{
+    height: 30px;
+    line-height: 30px;
+    font-size: 24px;
+    padding: 0 5px;
+    background: #aaa;
+    color: #fff;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+.ipt-section input:nth-child(1){
+    width: 120px;
+}
+.ipt-section input:nth-child(2){
+    min-width: 60px;
+    margin-left: 10px;
+}
+.display{
+    margin: 20px 0;
+    padding: 0 20px;
+    border: 1px solid #555;
+    border-radius: 10px;
+            transform:rotate(180deg);
+    -webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+        -ms-transform:rotate(180deg); 	/* IE 9 */
+       -moz-transform:rotate(180deg); 	/* Firefox */
+         -o-transform:rotate(180deg);
+}
+.display ul{
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+
+}
+.display ul li{
+    position: relative;
+    float: right;
+    width: 15px;
+    margin: 0 2px;
+    border: 1px solid transparent;
+    background: #999;
+            animation:limove 0.5s ease-out;
+       -moz-animation:limove 0.5s ease-out; /* Firefox */
+    -webkit-animation:limove 0.5s ease-out; /* Safari and Chrome */
+         -o-animation:limove 0.5s ease-out; /* Opera */
+}
+.focus{
+    border-color: #b55;
+}
+@keyframes limove
+{
+    from {top:-320px;}
+    to {top:0px;}
+}
+
