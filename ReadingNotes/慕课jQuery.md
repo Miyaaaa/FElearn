@@ -42,5 +42,41 @@
 	   .remove("条件")jQuery选择器，选择匹配对象下，特定条件的元素删除
 	3、.detach() 暂时性删除
 	   移除匹配对象，函数返回被删除的jQuery对象p。但只是显示效果没了（文档流中也没有）。该元素所绑定的事件、附加的数据都会保留，可用append(p)添加
+
+### 3.
 	4、.clone()复制节点
 	   深度复制所有匹配的元素集合，包括所有匹配的元素、匹配元素的下级元素、文字节点。
+
+
+## 3.jQuery事件
+### 1.click  dbclick双击
+	.click() 触发被选$对象集的点击事件
+	.click(input_data, func) 给对象集中元素绑定点击事件
+    	input_data(可选)：向事件处理函数传递数据
+		function func(e){} 在func中通过e.data获取input_data.
+
+### 2.鼠标事件
+	mousedown() 鼠标按下时，鼠标所在元素触发
+	mouseup() 鼠标释放时，鼠标所在元素触发
+	click() 鼠标按下、释放为同一dom元素时触发
+	不用管鼠标在按下后释放前的拖动
+
+### 3.鼠标滑过
+	mouseover() mouseout() 内部元素触发后，会继续冒泡到外部元素
+	mouseenter() mouseleave()只在target上触发，不会冒泡
+	hover(handlerIn, handlerOut) 相当于mouseenter+mouseleave的效果
+
+### 4.焦点事件
+	.focus() 当元素本身获得焦点
+	.focusIn() 当元素内部中的元素获得焦点时，该元素触发。（冒泡）
+	.blur()
+	.focusOut()
+
+### 5.change事件
+	监听input、textarea值变化，值变，且失去焦点后触发
+	单选框radio 复选框checkbox select 在用户做出选择后立即触发
+
+### 6.select选中
+	只针对input和textarea中的文本
+
+	
