@@ -76,7 +76,53 @@
 	监听input、textarea值变化，值变，且失去焦点后触发
 	单选框radio 复选框checkbox select 在用户做出选择后立即触发
 
-### 6.select选中
+### 6.文本select选中
 	只针对input和textarea中的文本
+
+### 7.提交事件。submit
+	可触发的dom元素，<input type="submit"> <input type="image"> <button type="submit">
+	回调函数返回false，阻止浏览器默认提交事件
+
+### 8.on绑定事件
+	1、$().on('事件名',data,function(){});
+	   给元素绑定事件，传入data（不能为字符串，boolean number [] {} function）
+	2、$().on('事件名1 事件名2'，data, function(){});
+	   给多个事件绑定同一函数
+	3、$().on({事件名1:func1, 事件名2:func2},data)	
+	   给元素不同事件绑定不同函数
+	4、事件委托
+	   $().on('事件名','selector',data,function) 把选择器对象的事件委托给上层
+	   $对象事件发生时，不触发function
+	   只有$对象：selector对象事件发生时，会冒泡到$对象，触发function 但e.target仍是selector对象
+	5、off卸载on绑定的事件
+	   $().off() 若传入事件名，则卸载该事件，若不传入，卸载所有
+
+### 9.trigger程序触发事件
+	1、 .trigger('事件名1 事件名2'，data) 触发事件，并传入参数
+	2、 自定义事件 .on('自定义事件名',function(){}) .trigger('自定义事件名',data)
+	3、会向上冒泡
+
+### 10.triggerHandler()
+    1、triggerHandler不会触发浏览器的默认行为，.triggerHandler( "submit" )将不会调用表单上的.submit()
+    2、.trigger() 会影响所有与 jQuery 对象相匹配的元素，而 .triggerHandler() 仅影响第一个匹配到的元素
+    使用 .triggerHandler() 触发的事件，并不会在 DOM 树中向上冒泡。 如果它们不是由目标元素直接触发的，那么它就不会进行任何处理
+    3、与普通的方法返回 jQuery 对象(这样就能够使用链式用法)相反，.triggerHandler() 返回最后一个处理的事件的返回值。如果没有触发任何事件，会返回 undefined
+
+### 11.event事件对象
+	event.target 是当前触发事件的元素，可能是绑定对象及其子元素  
+	event.currentTarget==this : 在事件冒泡过程中的当前DOM元素
+	this和event.target的区别：js中事件是会冒泡的，所以this是可以变化的，但event.target不会变化，它永远是直接接受事件的目标DOM元素；
+
+## 4.jQuery动画
+### 1.stop停止动画
+	在同一匹配元素上触发多个animate,这些动画组成一个队列，依次执行。
+	stop() 会停止第一个animate,后面的animate会继续执行。
+	stop(true) 停止所有的动画，把队列清空
+	stop(true,true) 停止所有的动画，直接跳到第一个动画的最终状态
+
+### 2.index()返回索引
+	$().index() 匹配元素的第一个 在同辈元素中的位置
+	$().index(一个dom元素或者一个jQuery对象) 参数是匹配元素的第几个
+	$().index($(selector))  $(selector)中第一个元素是匹配元素的第几个
 
 	
